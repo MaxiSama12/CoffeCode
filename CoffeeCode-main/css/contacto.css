@@ -1,0 +1,139 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+title {
+    font-size: 35px;
+    color: #eddcc6;
+}
+
+.bgMarronClaro {
+    background-color: #eddcc6;
+}
+
+.bgMarronOscuro {
+    background-color: #281c16;
+}
+
+#divOscuro {
+    position: relative;
+    top: 20px;
+
+}
+
+h2 {
+    color: rgb(237, 221, 198);
+}
+
+.form-control-contacto {
+    background-color: rgb(50, 36, 27);
+    color: rgb(237, 221, 198);
+    border-radius: 40px;
+    border: 0px;
+    height: 80px;
+    position: relative;
+    margin: 20px 0px;
+}
+
+.form-control-contacto:focus {
+    background-color: rgb(237, 221, 198);
+    transition: 0.5s;
+}
+
+.form-control-contacto:focus::placeholder {
+    color: #281c16 !important;
+    transition: 0.5s;
+}
+
+#Textarea1 {
+    height: 180px;
+}
+
+::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: rgb(237, 221, 198) !important;
+    opacity: 1 !important;
+}
+
+button {
+    background-color: rgb(237, 221, 198);
+    color: rgb(50, 36, 27);
+}
+
+.form-text {
+    color: rgb(237, 221, 198);
+}
+
+#enviarmensaje {
+    text-align: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+#btn-enviar-mensaje {
+    background-color: #eddcc6;
+    color: #281c16;
+    border-radius: 999px;
+    border: 0px;
+    height: 100%;
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+
+
+#infolugar {
+    margin-bottom: 10px;
+
+}
+
+.fa-solid_fa-location-dot,
+.fa-solid_fa-phone-volume {
+    position: relative;
+    display: inline-block;
+}
+
+#lugar1 {
+    display: inline-block;
+}
+
+.video-background {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.video-background img {
+    width: 500px;
+}
+
+.video-background video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    padding: 20px;
+    color: white;
+    height: 100%;
+}

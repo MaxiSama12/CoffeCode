@@ -1,0 +1,16 @@
+.swal-modal {
+    background-color: #eddcc6; /* Cambia el color de fondo aquí */
+    border-radius: 2rem;
+    border: none;
+}
+
+.swal-button--cancel {
+    background-color: #663600 !important;
+    color: #eddcc6;
+}
+
+.swal-button--confirm {
+    background-color: #9e1200 !important;
+    color: #eddcc6;
+    border: none;
+}

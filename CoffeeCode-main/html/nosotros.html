@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=, initial-scale=1.0" />
+  <title>Nosotros | CoCo</title>
+  <link rel="icon" href="/src/img/CirculoCoco.svg">
+  <!--Links-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Unna:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/principal.css">
+  <link rel="stylesheet" href="/css/nosotros.css">
+  <!--  <link rel="stylesheet" href="https://i.icomoon.io/public/temp/38c2730a28/UntitledProject/style.css"> -->
+  <link rel="stylesheet" href="/css/irarriba.css">
+  <link rel="stylesheet" href="/css/fonts.css">
+</head>
+
+<body>
+  <header>
+    <p class="topBanner d-flex align-items-center justify-content-center">20% DE DESCUENTO EN ACCESORIOS</p>
+    <div class="headerContainer">
+      <nav class="navbar navbar-expand-lg navBody">
+        <div class="container-fluid  navContainer">
+          <button class="navbar-toggler navbarBtn" type="button" data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+            <span class="navbar-toggler-icon olas"></span>
+          </button>
+          <a class="navbar-brand" href="/index.html"><img class="imgLogo" src="/src/img/LogoCOCO.svg"
+              alt="logo CoCo"></a>
+          <div class="offcanvas burgerMenu offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1"
+            id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasScrollingLabel"></h5>
+              <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="/index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="/html/catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="/html/nosotros.html">Sobre Nosotros</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link mx-2" href="/html/contacto.html">Contacto</a>
+                </li>
+                <li class="nav-item hidden" id="admin-link">
+                  <a class="nav-link mx-2" href="/html/admin.html">Administración</a>
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="botonesContainer">
+        <button type="button" class="btn" id="btn-login" data-bs-toggle="modal" data-bs-target="#loginModal">
+          <i id="icon-login" class="fa-solid fa-user" style="color: #eddcc6;"></i>
+        </button>
+        <button class="btn color-bg color-texto" type="button" data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" id="ver-carrito">
+          <i class="fa-solid fa-cart-shopping" style="color: #eddcc6;"></i>
+        </button>
+
+        <div class=" offcanvas offcanvasBg offcanvas-end colorBg colorTexto" tabindex="-1" id="offcanvasRight"
+          aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header">
+            <h3 class="offcanvas-title" id="offcanvasRightLabel">Carrito</h3>
+            <button class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="contenidoCarrito offcanvas-body " id="canvas-container">
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Login Modal-->
+    <div class="modal fade modal-lg" id="loginModal" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content modalBg">
+          <div class="modal-header">
+            <div class="ms-auto">
+              <img width="150px" src="/src/img/CirculoCoco.svg" alt="Logo CoCo">
+            </div>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <form id="form-login">
+            <div class="modal-body">
+              <div class="form">
+                <div class="formContainer d-flex flex-column">
+                  <h3>Iniciar Sesión</h3>
+                  <div class="formItem mt-4">
+                    <input type="email" name="email" class="form-control form-control-login focus-ring inputWrap"
+                      id="mail-login" pattern="^[\wñ]+@[a-zñ]+\.[a-zñ]{2,5}$" maxlength="50" required>
+                    <label for="mail-login" class="labelInput correo">
+                      Correo Electrónico
+                    </label>
+                  </div>
+                  <div class="formItem mt-4">
+                    <input type="password" class="form-control form-control-login focus-ring contraseniaInput inputWrap"
+                      id="contrasenia-login" minlength="8" maxlength="20" required>
+                    <label for="contrasenia-login" class="labelInput contrasenia">
+                      Contraseña
+                    </label>
+                    <i class="fa-regular fa-eye-slash" id="icon-contrasenia"></i>
+                  </div>
+                  <a href="/html/error404.html" class="mb-5 linkContra">¿Olvidaste tu contraseña?</a>
+                </div>
+              </div>
+              <div class="d-flex flex-column flex-column mb-3 justify-content-center align-items-center">
+                <div class="text-center usuarioInvalido" id="usuario-invalido">
+                  <p>Datos ingresados incorrectos. Intenta de nuevo</p>
+                </div>
+                <button class="btn btnIngresar" type="submit">INGRESAR</button>
+                <div class="d-flex pt-4 registrarseWrapp justify-content-center">
+                  <p class="pt-1">¿NO TIENES UNA CUENTA?</p>
+                  <a href="/html/registro.html" class="registrarse">Registrarse</a>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    </div>
+  </header>
+  <!--Fin Navbar-->
+  <!--Inicio del main -->
+  <span class="ir-arriba" id="flecha-scroll"></span>
+  <main class="main">
+    <div class="container text-center mt-4">
+      <h1>Sobre Nosotros</h1>
+    </div>
+    <div class="frase container overflow-hidden mt-5">
+      <p>
+        "CoCo" en un marca que nace de la fusión de dos palabras claves: "Coffee" y "Code". Esta combinación representan
+        la unión perfecta entre la creatividad y la tecnología. En un mundo cada vez mas digitalizado, "CoCo" se
+        presenta como una marca innovadora que busca brindar experiencias únicas a sus clientes. </p>
+      <br />
+      <br />
+      <p> La filosofia de "CoCo" se basa en la pasión por el café y el amor por el código. Por un
+        lado, el café representa la energía y la vitalidad que necesitamos para enfrentar el día a día. Por otro lado,
+        el código representa la tecnología y la innovación que nos permite avanzar y desarrollarnos.
+      </p>
+    </div>
+    <div class="container-fluid">
+      <div class="row row-cols-1 g-4 align-items-center justify-content-center">
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Alberto Aguirre.png" class="card-img-top img-fluid" alt="Foto de Aguirre Alberto" />
+            <div class="card-body text-light">
+              <h5 class="card-title">Aguirre Alberto</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Mauricio Broll.png" class="card-img-top img-fluid" alt="Foto de Broll Mauricio" />
+            <div class="card-body text-light">
+              <h5 class="card-title">Broll Mauricio</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Victoria Cavanna.png" class="card-img-top img-fluid" alt="Foto de Cavanna Victoria" />
+            <div class="card-body text-light">
+              <h5 class="card-title">Cavanna Victoria</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Paula Domski.png" class="card-img-top img-fluid" alt="Foto de Domski Paula" />
+            <div class="card-body text-light">
+              <h5 class="card-title">Domski Paula</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Agustina Gonzalez Gauna.jpeg" class="card-img-top img-fluid"
+              alt="Foto de Gonzalez Gauna Agustina" />
+            <div class="card-body text-light">
+              <h5 class="card-title">González Agustina</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Luisina Martinez.png" class="card-img-top img-fluid" alt="Foto de Martinez Luisina" />
+            <div class="card-body text-light">
+              <h5 class="card-title">Martinez Luisina</h5>
+            </div>
+          </div>
+        </div>
+        <div class="col mt-5 p-5 col-sm-12 col-md-6 col-lg-4 col-xl-4 align-items-center d-flex justify-content-center">
+          <div class="card member grayscale h-100 text-center bg-transparent text-body">
+            <img src="../src/img/Esteban Samaniego.png" class="card-img-top img-fluid"
+              alt="Foto de Samaniego Esteban" />
+            <div class="card-body text-light">
+              <h5 class="card-title">Samaniego Esteban</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <!--Fin del Main -->
+  <!--Inicio del Footer -->
+  <footer>
+    <div class="borderTopFooter d-flex justify-content-center align-items-center justify-content-center">
+      <img class="giro360 p-1 img-fluid d-none d-lg-block" src="/src/img/CirculoCoco.svg" alt="Logo Circular de Coco"
+        width="100px">
+    </div>
+    <div class="container">
+      <div class="footerWrap row p-5 align-content-center justify-content-around ">
+        <section
+          class="mt-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 justify-content-start align-items-start text-center text-md-start">
+          <div class="p-1"><a href="/html/error404.html" class="enlacesFooter fw-bold fs-5">Menu</a></div>
+          <div class="p-1"><a href="/index.html" class="enlacesFooter fs-6">Inicio</a></div>
+          <div class="p-1"><a href="/html/catalogo.html" class="enlacesFooter fs-6">Catálogo</a></div>
+          <div class="p-1"><a href="/html/nosotros.html" class="enlacesFooter fs-6">Sobre Nosotros</a></div>
+          <div class="p-1"><a href="/html/contacto.html" class="enlacesFooter fs-6">Contacto</a></div>
+        </section>
+
+        <section class="mt-4 p-2 col-sm-12 col-md-6 col-lg-6 col-xl-6 justify-content-center align-items-center">
+          <div class="text-center bordes">
+            <a href="/index.html"><img class="img-fluid px-5" src="/src/img/LogoFooter.svg" alt="Logo de Coco" /></a>
+          </div>
+        </section>
+        <section
+          class="redes mt-3 col-sm-12 col-md-3 col-lg-3 col-xl-3 d-flex flex-column justify-content-center justify-content-md-around align-items-center align-items-md-end text-center text-md-center">
+
+          <div class="p-2 md-center d-flex align-items-center justify-content-end">
+            <i class="fa-brands fa-facebook fa-2xl" style="color: #eddcc6;"></i>
+            <p class="enlacesFooter d-inline text-white"><a href="/html/error404.html"
+                class="enlacesFooter">@CoffeCode</a></p>
+          </div>
+          <div class="p-2 md-center d-flex align-items-center justify-content-end">
+            <i class="fa-brands fa-instagram fa-2xl" style="color: #eddcc6;"></i>
+            <p class="enlacesFooter d-inline text-white"><a href="/html/error404.html"
+                class="enlacesFooter">@CoffeCode</a></p>
+          </div>
+          <div class="p-2 md-center d-flex align-items-center justify-content-end">
+            <i class="fa-brands fa-twitter fa-2xl" style="color: #eddcc6;"></i>
+            <p><a href="/html/error404.html" class="enlacesFooter">@CoffeCode</a></p>
+          </div>
+        </section>
+      </div>
+  </footer>
+  <!--Fin del Footer -->
+
+  <!--Inicio Script -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script type="module" src="/js/login.js"></script>
+  <script src="https://kit.fontawesome.com/c3c9af520c.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+  crossorigin="anonymous"></script>
+  <script src="/js/irarriba.js"></script>
+  <!--Fin Script -->
+
+</body>
+
+</html>

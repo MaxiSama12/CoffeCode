@@ -1,0 +1,116 @@
+body {
+    background-color: #281c16;
+    font-family: 'Montserrat', sans-serif;
+}
+
+h3 {
+    color: #eddcc6;
+    font-size: 1.2rem;
+}
+
+::selection {
+    background: #281c16;
+    color: #eddcc6;
+    text-shadow: 1px 1px black;
+}
+
+.container.catalogoWrapp {
+    background-color: #eddcc6;
+    border-radius: 2rem;
+}
+
+.botonFiltro {
+    color: #eddcc6;
+    background-color: #281c16;
+    width: 100%;
+    height: 4rem;
+    border-radius: 1.3rem;
+    border: solid 2px #281c16; 
+}
+.botonFiltro:active {
+    background-color: #281c16 !important;
+    color: #eddcc6 !important;
+    border: solid 2px #281c16 !important;
+}
+.botonFiltro:hover {
+    background-color: transparent;
+    color: #281c16;
+    border: solid 2px #281c16;
+}
+
+.active {
+    background-color: #eddcc6 !important;
+    color: #281c16 !important;
+    border: solid 2px #281c16 !important;
+}
+
+.lista-productos p {
+    color: #eddcc6;
+}
+
+.lista-productos span {
+    color: #eddcc6;
+    font-weight: bold;
+}
+
+.box {
+    height: 400px;
+    width: 280px;
+    background-color: #281c16;
+    border-radius: 2rem;
+    padding: 0;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.botonCarrito {
+    color: #281c16;
+    background-color: #eddcc6;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.3rem;
+    border: solid 2px #281c16;
+    transition: 0.6s;
+}
+
+.botonCarrito:hover {
+    color: #eddcc6;
+    background-color: transparent;
+    width: 100%;
+    height: 2.5rem;
+    border-radius: 1.3rem;
+    border: solid 2px #eddcc6;
+}
+
+.anchoContenedorBoton {
+    width: 100%;
+}
+
+.agregarEInfo {
+    height: 2.5rem;
+    background-color: #eddcc6;
+    color: #281c16;
+    border: none;
+    border-radius: 999px;
+}
+
+.contador button,
+.contador input {
+    flex-grow: 1;
+    height: 2.5rem;
+    background-color: #422d23;
+    color: #281c16;
+    border: none;
+    color: white;
+    font-weight: bold;
+}
+
+.imgAdapt {
+    width: 8rem;
+}
+
+.separacion {
+    margin-top: auto;
+    justify-content: space-between;
+}

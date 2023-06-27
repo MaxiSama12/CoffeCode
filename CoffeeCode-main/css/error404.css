@@ -1,0 +1,57 @@
+::selection {
+    background: #281c16;
+    color: #eddcc6;
+    text-shadow: 1px 1px black;
+}
+
+main p {
+    color: #281c16;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    font-size: 22px;
+}
+
+.letraBordeMarron {
+    margin: 0;
+    padding: 0;
+    color: #281c16;
+    font-family: 'Poppins', sans-serif;
+    font-size: 6.5rem;
+    font-weight: 900;
+    font-style: italic;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 3px;
+}
+
+.bgMarronClaro {
+    background-color: #eddcc6;
+}
+
+.bgMarronOscuro {
+    background-color: #281c16;
+}
+
+.btn-primary {
+    color: #eddcc6;
+    font-size: 25px;
+    background-color: #281c16;
+    border: none;
+    border-radius: 50px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    background-image: url(/src/img/OlaCafe.png);
+    background-size: 500px;
+    background-repeat: repeat-x;
+    background-position: 0 -120%;
+    transition: 3.5s;
+}
+
+
+.btn-primary:hover {
+    background-color: #281c16;
+    background-position: 0% -120%;
+    transition: 3.5s;
+    background-position: 500% 100%;
+    color: #281c16;
+}

@@ -1,0 +1,201 @@
+:root {
+    --marronClaro: #eddcc6;
+    --marronNavbar: #33241b;
+    --marronOscuro: #160d0b;
+    --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+    --verdeMoho: #1e2d2c;
+    --marronBoton: #341f14;
+    --bordoBoton: #6d0000;
+    --marronSemiC: #4e372b;
+}
+
+body {
+    background-color: var(--marronOscuro);
+    font-family: "Montserrat", sans-serif;
+}
+
+h1 {
+    color: var(--marronClaro);
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+}
+
+h4 {
+    color: var(--marronClaro);
+    font-size: 17px;
+    font-weight: bold;
+}
+
+hr {
+    color: var(--marronClaro);
+}
+
+thead {
+    color: var(--marronClaro);
+    font-weight: bold;
+}
+
+tbody {
+    color: var(--marronOscuro);
+    background-color: var(--marronClaro);
+}
+
+.editar {
+    background-color: var(--marronBoton);
+    width: 50px;
+    height: 50px;
+    background-image: url(/src/img/editar.svg);
+    background-size: 60%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eliminar {
+    background-color: var(--bordoBoton);
+    width: 50px;
+    height: 50px;
+    background-image: url(/src/img/eliminarRed.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.eliminarusuario {
+    background-color: var(--bordoBoton);
+    width: 50px;
+    height: 50px;
+    background-image: url(/src/img/eliminarRed.svg);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 1700px;
+}
+
+.navBackground {
+    background-color: transparent;
+}
+
+.navBackground a {
+    background-color: transparent;
+    color: var(--marronClaro);
+    transition: 0.5s;
+    text-align: center;
+}
+
+.navBackground a:hover {
+    background-color: var(--marronClaro);
+    color: #281c16;
+    border-radius: 999px;
+}
+
+.borderColor {
+    border-color: var(--marronClaro);
+}
+
+.olas {
+    background-image: url(/src/img/LieasOlas.svg);
+}
+
+.btnAgregar {
+    background-color: var(--marronClaro);
+    color: var(--marronOscuro);
+    min-width: 150px; /* Tamaño mínimo del botón */
+    max-width: 370px; /* Tamaño máximo del botón */
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 999px;
+    border: none;
+    transition: 1s;
+}
+
+.btnAgregar:hover {
+    background-color: var(--marronSemiC);
+    color: var(--marronClaro);
+}
+
+.btnAgregar:active {
+    background-color: var(--marronSemiC) !important;
+    color: var(--marronClaro) !important;
+}
+
+.subtitulo h3 {
+    color: var(--marronClaro);
+    font-weight: 400;
+}
+
+.table tbody tr {
+    height: 60px;
+    /* Establece la altura deseada */
+    border-color: var(--marronOscuro);
+    vertical-align: middle;
+}
+
+.table tbody td {
+    vertical-align: middle;
+    /* Centra el contenido verticalmente */
+}
+
+.botonCont {
+    background-color: var(--marronOscuro);
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+    border-radius: 15px;
+    border: none;
+    opacity: 80%;
+    transition: 0.7s;
+}
+
+.botonCont:hover {
+    opacity: 100%;
+}
+
+.botoDerecha {
+    position: relative;
+    right: 0;
+}
+
+/* ESTILO MODAL */
+.modal-content {
+    background-color: var(--marronOscuro);
+    color: #eddcc6;
+    border-radius: 2rem;
+    padding: 1rem;
+}
+
+.modal-content input,
+.modal-content textarea,
+.modal-content select {
+    margin-bottom: 1rem;
+}
+
+.modal-content input,
+.modal-content select {
+    background-color: var(--marronClaro);
+    height: 3.2rem;
+    border-radius: 999px;
+}
+
+.modal-content button {
+    background-color: var(--marronClaro);
+    border: solid 2px var(--marronClaro);
+    color: #281c16;
+    font-weight: bolder;
+    padding: 1rem;
+}
+
+.btnCerrarGuardar button {
+    background-color: transparent;
+    border-color: var(--marronClaro);
+    color: var(--marronClaro);
+    transition: 0.5s;
+}
+
+.btnCerrarGuardar button:hover {
+    background-color: var(--marronNavbar);
+    border-color: var(--marronClaro);
+    color: var(--marronClaro);
+}

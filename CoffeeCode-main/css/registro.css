@@ -1,0 +1,101 @@
+:root {
+  --marronClaro: #eddcc6;
+  --marronNavbar: #33241b;
+  --marronOscuro: #160d0b;
+  --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+  --verdeMoho: #1e2d2c;
+  --marronBoton: #341f14;
+  }
+
+main.fondo {
+  background-color: #160c0a;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-image: url("../src/img/OlasRegister.svg");
+  background-repeat: repeat-x;
+  background-position: 0;
+  background-size: 1920px;
+  animation: mover-fondo 20s linear infinite;
+}
+
+p {
+  font-size: 1.3rem;
+  margin: 0;
+}
+
+a {
+  color: #281c16;
+  text-decoration: none;
+}
+
+.form-control:focus {
+  background-color: #5a4131;
+  color: var(--marronClaro);
+  box-shadow: none;
+}
+
+::selection {
+  background: #281c16;
+  color: #eddcc6;
+  text-shadow: 1px 1px black;
+}
+
+.bgMarronClaro {
+  background-color: var(--marronClaro);
+  border-radius: 3rem;
+}
+
+.form-control {
+  color: #eddcc6;
+  background-color: #281c16;
+  border-radius: 999px;
+  border: none;
+  padding: 1rem;
+}
+
+.form-control::placeholder {
+  font-style: italic;
+  color: #eddcc688;
+}
+
+h5 {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 0 0 0 10px;
+}
+
+.btn-primary {
+  color: #eddcc6;
+  background-color: #281c16;
+  border: none;
+  font-weight: bold;
+  width: 100%;
+  height: 6rem;
+  border-radius: 1.7rem;
+}
+
+.btn-primary:hover {
+  background-color: #101c1b;
+}
+
+.barista {
+  background-image: url(/src/img/Barista.jpg);
+  background-repeat:no-repeat;
+  background-size: 750px;
+  background-position: 50% 0;
+  border-top-right-radius: 3rem;
+  border-bottom-right-radius: 3rem;
+}
+
+
+@keyframes mover-fondo {
+  to {
+      background-position: -1920px;
+  }
+}

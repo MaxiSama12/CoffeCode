@@ -1,0 +1,1290 @@
+/* Estilos Generales*/
+:root {
+    --marronClaro: #eddcc6;
+    --marronNavbar: #33241b;
+    --marronOscuro: #160d0b;
+    --degradado: linear-gradient(to bottom, #33241b, #160d0b);
+    --verdeMoho: #1e2d2c;
+    --marronBoton: #341f14;
+    --aModal: #7b543f;
+}
+
+::selection {
+    background: var(--marronClaro);
+    color: var(--marronNavbar)
+}
+.hidden {
+    display: none;
+  }
+  ::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #0f0908;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #341f14;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 1px #0f0908;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--marronClaro);
+}
+/* COMIENZO NAVBAR */
+/* header .topBanner {
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    padding-top: 1rem;
+    margin: 0;
+} */
+
+.imgLogo {
+    width: 12rem;
+    height: 5rem;
+}
+
+.navbar.navbar-expand-lg {
+    padding: 0 auto;
+    margin: 0;
+    background-color: var(--marronNavbar);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-nav a {
+    font-size: 1rem;
+    font-family: 'Unna', serif;
+    color: var(--marronClaro);
+    text-decoration: none;
+    text-align: center;
+    gap: 50px;
+}
+
+.navbar-nav a:hover {
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+button.navbarBtn .navbar-toggler-icon {
+    background-color: var(--marronNavbar);
+    background-image: url(../src/img/CirculoCoco.svg);
+    width: 2rem;
+}
+
+.offcanvas {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+@media (max-width: 992px) {
+    .navbar-right li .btn i::after {
+        content: 'Login';
+        padding-left: 1rem;
+        font-family: 'Unna', serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #9d745e;
+    }
+
+    .navbar-right li .btn .fa-user::after {
+        content: 'Login';
+    }
+
+    .navbar-right li .btn .fa-cart-shopping::after {
+        content: 'Carrito';
+    }
+}
+
+.headerContainer {
+    background-color: var(--marronNavbar);
+    justify-content: center;
+}
+
+.topBanner {
+    height: 2.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.7rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    margin: 0;
+}
+
+.imgLogo {
+    width: 12rem;
+    height: 5rem;
+}
+
+.navbar.navbar-expand-lg {
+    padding: 0 auto;
+    margin: 0;
+    background-color: var(--marronNavbar);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-nav a {
+    font-size: 1rem;
+    font-family: 'Unna', serif;
+    font-style: italic;
+    color: var(--marronClaro);
+    text-decoration: none;
+    text-align: center;
+    gap: 50px;
+}
+
+.navbar-nav a:hover {
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+
+
+.offcanvas {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+}
+
+.burgerMenu {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.olas {
+    display: flex;
+    width: 50px;
+    height: 32px;
+    background-position: 0px 0;
+    background-size: 50px;
+    animation: olasIcono 5s linear infinite;
+    background-repeat: repeat-x;
+}
+
+.botonesContainer {
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+@keyframes olasIcono {
+    to {
+        background-position: -50px 0;
+    }
+}
+
+/*Login Modal*/
+.modal .modalBg {
+    background-color: var(--marronOscuro);
+    color: var(--marronClaro);
+}
+
+.modal .modal-body .formContainer,
+.modal-body .linkContra {
+    align-items: center;
+}
+
+.modal .btnIngresar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--marronClaro);
+    color: var(--marronOscuro);
+    font-weight: 650;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 1.3s ease;
+    border-radius: 20px;
+}
+
+.modal .btnIngresar:hover {
+    box-shadow: 0px 0px 5px 0px var(--marronClaro);
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-header button.btn-close {
+    align-self: flex-start;
+}
+
+.modal-body a.linkContra {
+    color: var(--marronClaro);
+}
+
+.modal-body a.linkContra:hover {
+    color: var(--aModal);
+}
+
+
+.form {
+    background-color: transparent;
+}
+
+.formItem {
+    position: relative;
+    margin-bottom: 15px
+}
+
+div.formItem i#icon-contrasenia {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.formItem input {
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    background: transparent;
+    border: solid 1px var(--marronClaro);
+    border-radius: 20px;
+    transition: all .3s ease;
+    color: var(--marronClaro);
+}
+
+.formItem input:focus {
+    --bs-focus-ring-color: var(--marronNavbar);
+    --bs-focus-ring-y: 0.1px;
+    --bs-focus-ring-blur: 20px;
+    color: var(--marronClaro);
+    border: 2px solid var(--marronClaro);
+    background-color: transparent;
+}
+.formItem input.valido{
+    border: 2px solid rgb(31, 79, 31);
+}
+.formItem input.invalido{
+    border: 2px solid rgb(110, 43, 43);
+}
+.formItem label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0 10px;
+    color: #725546;
+    transition: all .3s ease
+}
+
+.formItem input:focus+label,
+.formItem input:valid+label,
+.formItem input.hasValue+label {
+    font-size: 1rem;
+    top: -10px;
+    background-color: #160d0bf1;
+    color: var(--marronClaro);
+    border-radius: 10px;
+}
+
+.registrarseWrapp {
+    width: 100%;
+}
+
+a.registrarse {
+    color: var(--marronClaro);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-left: 3%;
+}
+
+.usuarioInvalido {
+    display: none;
+    background-image: linear-gradient(rgba(248, 81, 73, 0.1), rgba(248, 81, 73, 0.1));
+    border: 1px solid rgba(248, 81, 73, 0.4);
+    border-radius: 10px;
+    padding: 1% 5%;
+    margin: 0 3% 2%;
+    color: #e6edf3;
+}
+
+@media (max-width: 992px) {
+    .navbar-right li .btn i::after {
+        content: 'Login';
+        padding-left: 1rem;
+        font-family: 'Unna', serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #9d745e;
+    }
+
+    .navBody {
+        width: 68%;
+        justify-content: space-around;
+    }
+
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .modal .btnIngresar {
+        width: 20rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .navBody {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 992px) {
+    div.navContainer {
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-right {
+        position: absolute;
+        right: 7%;
+    }
+
+    .headerContainer {
+        display: flex;
+    }
+
+    .botonesContainer {
+        position: absolute;
+        top: 9rem;
+        right: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .modal .btnIngresar {
+        width: 20rem;
+    }
+
+    .modal .btnIngresar:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+@media (max-width: 374px) {
+    .navbar-brand img {
+        width: 8.6rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal .btnIngresar {
+        width: 90vw;
+    }
+}
+
+.offcanvasBg {
+    background-image: url(../src/img/CirculoCoco.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 30rem !important;
+}
+
+.offcanvasBg img {
+    height: 100%;
+    width: 100%;
+}
+
+.no-border {
+    border: 1px solid #956037;
+}
+
+
+.colorBg {
+    background-color: #19110d;
+}
+
+.colorTexto {
+    color: var(--marronClaro);
+}
+
+
+/* Estilos para productos del carrito */
+
+
+.capsulasBg p {
+    transition: color 1s;
+}
+
+.capsulasBg:hover p {
+    color: var(--marronOscuro);
+}
+
+
+.btn-close {
+    color: var(--marronClaro);
+}
+
+.contenidoCarrito {
+    width: 100%;
+    margin: 0 auto;
+    height: 864px;
+}
+
+.productoCarrito {
+    background-color: #33241b;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.infoCarrito {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoCarrito h2 {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.infoCarrito p {
+    width: 100%;
+
+}
+
+.productoCarrito img {
+    max-height: 30rem;
+    max-width: 60%;
+}
+
+.imgProducto {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+.restar {
+    cursor: pointer;
+    margin: 0rem 1rem 1rem 1rem;
+    background-color: black;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.cantidadCarrito {
+    font-weight: 700;
+}
+
+.sumar {
+    cursor: pointer;
+    margin: 0rem 2rem 1rem 1rem;
+    background-color: black;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.totalContent {
+    position: relative;
+    bottom: 0;
+    background-color: #19110d;
+    width: 50rem;
+    height: 10%;
+    padding: 1.7rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+@media (max-width:420px) {
+    .totalContent {
+        font-size: 1.5rem;
+        width: 34rem;
+    }
+
+}
+
+.finalizarCompra {
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    margin: 3rem;
+    height: 6rem;
+    width: 20rem;
+    border-radius: 7%;
+}
+
+/* Estilos para los productos del catalogo */
+
+
+.capsulasBg {
+    background-color: rgba(14, 13, 13, 0.744);
+    border-radius: 20px;
+    color: var(--marronClaro);
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    transition: .3s;
+}
+
+.capsulasBg:hover {
+    background-color: rgba(237, 220, 198, 1);
+    color: var(--marronOscuro);
+}
+
+.capsulasBg p {
+    transition: color .1s;
+}
+
+.capsulasBg:hover p {
+    color: var(--marronOscuro);
+}
+
+.botonCat {
+    background-color: var(--marronBoton);
+    border: none;
+}
+
+.carrito {
+    display: flex;
+    justify-content: center;
+}
+
+.carritoProducto img {
+    object-fit: contain;
+    width: 8rem;
+    height: 11rem;
+    background-color: #33241b;
+    padding: .6rem;
+}
+
+.carritoProducto input {
+    background-color: transparent;
+    border: none;
+    width: 7rem;
+    border-bottom: 1px solid white;
+    color: #eddcc6;
+}
+
+
+.addNumber_cont {
+    display: flex;
+    align-items: center;
+}
+
+.addNumber_cont button {
+    width: 3.5rem;
+    height: 3rem;
+
+    border: none;
+    border-radius: 1px;
+
+    color: #eddcc6;
+    background-color: #1e2d2c;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+.addNumber_cont button:hover {
+    background-color: #33241b;
+}
+
+.value_cont {
+    width: 3rem;
+    height: 3rem;
+
+
+    border-radius: 1px;
+
+    color: var(--marronClaro);
+    background-color: #33241b;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.value_cont p {
+    font-size: 1.3rem;
+    margin: 0;
+}
+
+.botonEliminar {
+    background-color: #19110d;
+    color: var(--marronClaro);
+    border: none;
+    padding: 1rem;
+    border-radius: 10%;
+}
+
+
+
+.carritoPago {
+    height: 7rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pagoTexto {
+    padding: 5rem;
+    align-items: center;
+}
+
+
+@media (max-width:576px) {
+    .pagoTexto {
+        padding: 0;
+        padding-right: 11rem;
+    }
+}
+
+
+.botonPagar {
+    background-color: black;
+    height: 6rem;
+    width: 15rem;
+    border: none;
+    color: var(--marronClaro);
+}
+
+
+
+@media (max-width:576px) {
+    .headCarrito {
+        display: none;
+    }
+}
+
+/* COMIENZO NAVBAR */
+
+.headerContainer {
+    background-color: #33241b;
+    justify-content: center;
+}
+
+.imgLogo {
+    width: 12rem;
+    height: 5rem;
+}
+
+.navbar.navbar-expand-lg {
+    padding: 0 auto;
+    margin: 0;
+    background-color: #33241b;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.navbar-nav a {
+    font-size: 1rem;
+    font-family: 'Unna', serif;
+    color: var(--marronClaro);
+    text-decoration: none;
+    text-align: center;
+    gap: 50px;
+}
+
+.navbar-nav a:hover {
+    color: var(--marronClaro);
+    background-color: var(--verdeMoho);
+    border-radius: 25px;
+    transition: 0.5s;
+}
+
+button.navbarBtn .navbar-toggler-icon {
+    background-color: var(--marronNavbar);
+    background-image: url(../src/img/LineasOlas.svg);
+    width: 2rem;
+}
+
+.offcanvas {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+}
+
+.burgerMenu {
+    background-color: var(--marronNavbar);
+    font-size: 1.5rem;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+}
+
+.botonesContainer {
+    margin: 0;
+    display: flex;
+    align-items: end;
+    justify-content: end;
+}
+
+/*Login Modal*/
+.modal .modalBg {
+    background-color: var(--marronOscuro);
+    color: var(--marronClaro);
+}
+
+.modal .modal-body .formContainer,
+.modal-body .linkContra {
+    align-items: center;
+}
+
+.modal .btnIngresar {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--marronClaro);
+    color: var(--marronOscuro);
+    font-weight: 650;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 1.3s ease;
+    border-radius: 20px;
+}
+
+.modal .btnIngresar:hover {
+    box-shadow: 0px 0px 5px 0px var(--marronClaro);
+}
+
+.modal-header {
+    border: none;
+}
+
+.modal-header button.btn-close {
+    align-self: flex-start;
+}
+
+.modal-body a.linkContra {
+    color: var(--marronClaro);
+}
+
+.modal-body a.linkContra:hover {
+    color: #7b543f;
+}
+
+
+.form {
+    background-color: transparent;
+}
+
+.formItem {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.formItem input {
+    display: block;
+    width: 20rem;
+    height: 3rem;
+    background: transparent;
+    border: solid 1px var(--marronClaro);
+    border-radius: 20px;
+    transition: all .3s ease;
+    color: var(--marronClaro);
+}
+
+.formItem input:focus {
+    --bs-focus-ring-color: var(--marronNavbar);
+    --bs-focus-ring-y: 0.1px;
+    --bs-focus-ring-blur: 20px;
+    color: var(--marronClaro);
+    border: 2px solid var(--marronClaro);
+    background-color: transparent;
+}
+
+.formItem label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 10px;
+    left: 10px;
+    font-weight: bold;
+    background-color: transparent;
+    padding: 0 10px;
+    color: #725546;
+    transition: all .3s ease
+}
+
+.formItem input:focus+label,
+.formItem input:valid+label,
+.formItem input.hasValue+label {
+    font-size: 1rem;
+    top: -10px;
+    background-color: #160d0bf1;
+    color: var(--marronClaro);
+    border-radius: 10px;
+}
+
+.registrarseWrapp {
+    width: 100%;
+}
+
+a.registrarse {
+    color: var(--marronClaro);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.3rem;
+    padding-left: 3%;
+}
+
+.usuarioInvalido {
+    display: none;
+    background-image: linear-gradient(rgba(248, 81, 73, 0.1), rgba(248, 81, 73, 0.1));
+    border: 1px solid rgba(248, 81, 73, 0.4);
+    border-radius: 10px;
+    padding: 1% 5%;
+    margin: 0 3% 2%;
+    color: var(--marronClaro);
+}
+
+@media (max-width: 992px) {
+    .navbar-right li .btn i::after {
+        content: 'Login';
+        padding-left: 1rem;
+        font-family: 'Unna', serif;
+        font-size: 1.3rem;
+        font-weight: 400;
+        color: #9d745e;
+    }
+
+    .navBody {
+        width: 68%;
+        justify-content: space-around;
+    }
+
+    .headerContainer {
+        display: flex;
+        justify-content: space-between;
+
+    }
+
+    .modal .btnIngresar {
+        width: 20rem;
+    }
+
+}
+
+@media (max-width: 430px) {
+
+    .navBody {
+        width: 100%;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 992px) {
+    div.navContainer {
+
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-right {
+        position: absolute;
+        right: 7%;
+    }
+
+    .navbar-right {
+        position: absolute;
+        right: 7%;
+    }
+
+    .headerContainer {
+        display: flex;
+    }
+
+    .botonesContainer {
+        position: absolute;
+        top: 9rem;
+        right: 1rem;
+        justify-content: space-evenly;
+    }
+
+    .modal .btnIngresar {
+        width: 20rem;
+    }
+
+    .modal .btnIngresar:hover {
+        transform: scale(1.2);
+    }
+
+}
+
+@media (max-width: 374px) {
+    .navbar-brand img {
+        width: 8.6rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .modal .btnIngresar {
+        width: 90vw;
+    }
+}
+
+/* FINAL DEL NAVBAR */
+
+
+
+/* COMIENZO CONTENIDO */
+body {
+    background-color: var(--marronOscuro);
+}
+
+hr {
+    color: var(--marronClaro);
+}
+
+.contenedor {
+    max-width: 90%
+}
+
+.barraOferta {
+    background-color: #1e2d2c;
+    color: white;
+    height: 38px;
+    font-family: 'Unna', serif;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.navB {
+    background-color: #33241b;
+    height: 103px;
+}
+
+.marcasCafeteras {
+    background-color: #19110d;
+}
+
+.degradadoContenido {
+    background-image: var(--degradado);
+}
+
+.tipografiaContenido {
+    color: var(--marronClaro);
+    font-family: 'Montserrat', sans-serif;
+    text-align: justify;
+    padding: 25px 50px 25px 50px;
+}
+
+.titulosH2 {
+    font-family: 'Montserrat', sans-serif;
+    color: var(--marronClaro);
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.capsulasBg {
+    background-color: rgba(237, 220, 198, 0);
+    border-radius: 40px;
+    color: var(--marronClaro);
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    transition: 1s;
+}
+
+.capsulasBg:hover {
+    background-color: rgba(237, 220, 198, 1);
+    color: var(--marronOscuro);
+}
+
+.capsulasBg p {
+    transition: color 1s;
+}
+
+.capsulasBg:hover p {
+    color: var(--marronOscuro);
+}
+
+.botonCat {
+    background-color: var(--marronBoton);
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    transition: 1.5s;
+}
+
+.botonCat:hover {
+    background-color: var(--marronClaro);
+    color: var(--marronBoton);
+}
+
+/* INICIO DE PARALLAX */
+
+.parallaxCafe {
+    height: 40vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.parallaxCafe video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+}
+
+/* FIN DE PARALLAX */
+/* FINAL DEL CONTENIDO */
+
+
+
+/* COMIENDO FOOTER */
+footer {
+    font-family: 'Montserrat', sans-serif, 'Unna', serif;
+    background-color: #32241b;
+}
+
+
+.bordes {
+    border-left: 1px solid var(--marronClaro);
+    border-right: 1px solid var(--marronClaro);
+}
+
+
+.logoFooter {
+    max-width: 95%;
+}
+
+@media (min-width: 992px) {
+    .logoFooter {
+        max-width: 55%;
+    }
+}
+
+
+footer p {
+    margin: 0;
+    margin-left: 10px;
+}
+
+.enlacesFooter {
+    color: var(--marronClaro);
+    text-decoration: none;
+}
+
+.enlacesFooter:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.catalogoFooter {
+    margin-top: 5%;
+}
+
+.borderTopFooter {
+    width: 100%;
+    height: 0px;
+    background: black;
+}
+
+.giro360 {
+    transform: rotate(0deg);
+    animation: rotate 5s linear infinite;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 979px) {
+    .container .footerWrap {
+        padding: 0;
+    }
+}
+
+/* FINAL DEL FOOTER */
+
+/*CARRITO*/
+
+
+.offcanvasBg  {
+    background-image: url(/src/img/CirculoCoco.svg);
+    background-repeat: no-repeat;
+    background-position: center ;
+    width: 30rem !important;
+}
+
+.offcanvasBg img {
+    height: 100%;
+    width: 100%;
+}
+
+.no-border {
+    border: 1px solid #956037;
+}
+
+
+.colorBg {
+    background-color: #19110d !important;
+}
+
+.colorTexto {
+    color: #eaddcd;
+}
+
+
+.contenidoCarrito {
+    width: 100%;
+    margin: 0 auto;
+    height: 864px;
+}
+
+.productoCarrito {
+    background-color: #33241b;
+    margin-bottom: 1.8rem;
+    width: 100%;
+    border-radius: 1rem;
+    padding: 1rem;
+}
+
+.infoCarrito {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.infoCarrito h2 {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.infoCarrito p {
+    width: 100%;
+
+}
+
+.productoCarrito img {
+    max-height: 30rem;
+    max-width: 60%;
+}
+
+.imgProducto {
+    display: flex;
+    justify-content: center;
+    padding: 3rem;
+    height: 100%;
+    width: 100%;
+}
+
+.restar {
+    cursor: pointer;
+    margin: 0rem 1rem 1rem 1rem;
+    background-color: black;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+}
+
+.cantidadCarrito {
+    font-weight: 700;
+}
+
+.sumar {
+    cursor: pointer;
+    margin: 0rem 2rem 1rem 1rem;
+    background-color: black;
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+}
+
+
+.totalContent {
+    position: relative;
+    bottom: 0;
+    background-color: #19110d;
+    width: 30rem;
+    height: 10%;
+    padding: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+
+}
+
+.finalizarCompra, .finalizarCompra a {
+    margin-right: 1rem;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 1.4rem;
+    margin: 1rem;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 7%;
+    text-decoration: none;
+}
+
+@media (max-width:405px) {
+    .totalContent {
+        width: 24rem;
+    }
+
+    .totalContent p {
+        font-size: 1.3rem;
+        width: 30%;
+    }
+
+    .finalizarCompra {
+        width: 90%;
+        
+    }
+
+    .finalizarCompra P {
+        font-size: 1rem;
+        margin: 1rem;
+    }
+
+}
